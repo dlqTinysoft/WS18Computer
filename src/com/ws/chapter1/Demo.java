@@ -1,0 +1,9 @@
+package com.ws.chapter1;
+
+public class Demo {
+	
+	public static void main(String[] args) {
+		System.out.println("hello world ");
+	}
+
+}
