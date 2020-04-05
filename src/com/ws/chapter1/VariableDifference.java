@@ -6,14 +6,11 @@ package com.ws.chapter1;
  * 局部变量 vs 成员变量
  */
 public class VariableDifference {
-	
 	//成员变量
 	public String name;
-	
 	public void methodA(double param1){
 		//局部变量
 		float price = 90.23f ;
 		System.out.println(price);
 	}
-
 }
