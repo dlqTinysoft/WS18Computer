@@ -1,4 +1,4 @@
-package com.ws.computer5_6.dayi;
+package com.ws.computer.dayi.chapter1;
 import java.util.Arrays;
 import java.util.Iterator;
 /**

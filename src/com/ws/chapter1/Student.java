@@ -3,7 +3,7 @@ package com.ws.chapter1;
  * 作者：董乐强
  * 邮箱: dlq_tinysoft@163.com
  * 单位：武汉生物工程学院
- * 定义学生类
+ * 定义学生类:成员变量 和成员方法
  */
 public class Student {
 	/*----------成员变量--------*/

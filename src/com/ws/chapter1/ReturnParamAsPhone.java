@@ -12,7 +12,7 @@ public class ReturnParamAsPhone {
 		System.out.println(p1.brand);
 		System.out.println(p1.price);
 	}
-    //返回引用类型
+    //返回引用类型 
 	private static Phone getPhone() {
 		//new一个Phone对象
 		Phone phone = new Phone();

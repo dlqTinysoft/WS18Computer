@@ -12,6 +12,7 @@ public class Phone {
 	public float price;
 	//打印手机信息(成员方法)
 	public void info(){
+		
 		System.out.println("手机品牌： "+brand+" 手机价格："+price);
 	}
 }

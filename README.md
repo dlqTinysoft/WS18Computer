@@ -44,9 +44,11 @@
                          
     5.对象内存图（见process  on ）
     
-    		https://www.processon.com/diagraming/5e875786e4b03bfcd07dedcc                            
+    		https://www.processon.com/diagraming/5e875786e4b03bfcd07dedcc     
+    6.垃圾对象
+                           
          
-    6.成员变量  VS 局部变量(重点)
+    7.成员变量  VS 局部变量(重点)
           1)定义的位置不一样【重点】
                               局部变量：在方法的内部
                               成员变量：在方法的外部，直接写在类当中
