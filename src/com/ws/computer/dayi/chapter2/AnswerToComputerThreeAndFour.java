@@ -32,11 +32,9 @@ public class AnswerToComputerThreeAndFour {
 	    int min = minOfArr(arr);
 		System.out.println(Arrays.toString(arr));
 		System.out.println(min);
-		
 		methodA(arr);
 		float ft = methodNg(arr);
 		System.out.println();
-		
 		System.out.println(ft);
 		
 		//引用类型变量
@@ -92,7 +90,7 @@ public class AnswerToComputerThreeAndFour {
 	/**
 	 * @param arr
 	 */
-	private static void bubbleSort(int[] arr) {
+	public  static void bubbleSort(int[] arr) {
 		
 		int temp = 0 ;
 		//1.冒泡的次数
