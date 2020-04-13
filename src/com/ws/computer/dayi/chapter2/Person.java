@@ -1,0 +1,22 @@
+package com.ws.computer.dayi.chapter2;
+
+/**
+ * @author 董乐强
+ * 邮箱：dlq_tinysoft@163.com
+ * 2020年4月13日上午11:36:08
+ */
+public class Person {
+	
+	//属性，成员变量
+	public int age;
+	public float height;
+	public String name;
+	
+	//成员方法,行为
+	public void study(){
+		System.out.println("学习");
+	}
+	
+	
+
+}

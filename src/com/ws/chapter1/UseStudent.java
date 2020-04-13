@@ -22,6 +22,6 @@ public class UseStudent {
 		System.out.println(stu.age);
 		//调用成员方法
 		stu.study();
-		stu.eat();
+		
 	}
 }

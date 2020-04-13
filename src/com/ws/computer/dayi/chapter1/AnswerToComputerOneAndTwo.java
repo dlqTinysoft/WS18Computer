@@ -1,5 +1,7 @@
 package com.ws.computer.dayi.chapter1;
 
+import java.util.ArrayList;
+
 /**
  * 
  * @author dlq_tinysoft
@@ -38,6 +40,8 @@ public class AnswerToComputerOneAndTwo {
 		//1.定义一个整型变量
 		int myInt = 100 ; // int:数据类型   myInt:变量名  100：变量的值
 		System.out.println(myInt);
+		String[] s = {"aa",null,null,null};
+		System.out.println("======="+s.length);
 		//变量三要素： 数据类型   变量名字  变量的值
 		
 		//double类型的变量
@@ -69,19 +73,18 @@ public class AnswerToComputerOneAndTwo {
 		/*------------------循环语句-----------------------*/
 		//methodFor();
 		
-		/**-------------数组---------------*/
+		/*-------------数组---------------*/
 		methodArray();
-		
-		
-		
-		
 	}
 
 	//数组的复习
 	private static void methodArray() {
+		
 		//定义一个大小为3的整型数组
 		//int[] myIntArray 等价于 int myInt =100
+		//静态的
 		int[] myIntArray = new int[3];
+		//int[] my = new int[2];
 		//数组的下标是从0开始的
 		for(int i = 0 ; i < myIntArray.length ; i++){
 			myIntArray[i]= i+1;

@@ -12,6 +12,8 @@ public class Student {
 	//年龄
 	public int age;
 	
+	public float height;
+	
 	/*---------成员方法--------*/
 	//学习
 	public void study(){

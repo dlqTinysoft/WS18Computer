@@ -10,7 +10,6 @@ public class UsePhone {
 		//1.Phone p1:定义引用类型变量p1
 		//2.new Phone():实例化对象（申请内存空间）
 		Phone p1 = new Phone();
-		
 		//打印成员变量
 		System.out.println(p1.brand);
 		System.out.println(p1.price);
@@ -28,8 +27,7 @@ public class UsePhone {
         Phone p2 = new Phone();
         p2.brand = "苹果11";
         p2.price = 7999;
-        p2.info();
-        
+        p2.info(); 
         
 	}
 }
