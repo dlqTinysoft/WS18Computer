@@ -1,4 +1,4 @@
-package com.ws.chapter2;
+package com.ws.computer.chapter2;
 /**
  * 作者： 董乐强
  * 邮箱：dlq_tinysoft@163.com

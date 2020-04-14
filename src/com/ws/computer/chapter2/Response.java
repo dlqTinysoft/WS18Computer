@@ -1,4 +1,4 @@
-package com.ws.chapter2;
+package com.ws.computer.chapter2;
 
 /**
  * 姓名： 董乐强
