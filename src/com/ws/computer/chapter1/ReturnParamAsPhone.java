@@ -20,6 +20,6 @@ public class ReturnParamAsPhone {
 		phone.brand = "华为";
 		phone.price = 4999;
 		//返回
-		return phone;
+		return phone;//0x11ff   int:1
 	}
 }

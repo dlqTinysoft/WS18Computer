@@ -1,7 +1,4 @@
 package com.ws.computer.chapter2;
-
-
-
 /**
  * @author 董乐强 
  * 邮箱：dlq_tinysoft@163.com 
@@ -15,11 +12,13 @@ public class WasteObject {
 	public static void main(String[] args) {
 		// 1.对象的引用超出了作用域，该对象成为了垃圾对象
 		getCat();
+		
 		//2.对象的引用重新指向为空
 		Cat c = new Cat();
 		c.name = "小黑猫";
 		c.age = 2;
 		c = null;
+		
 	}
 	// 垃圾对象：该方法释放后，没有引用指向new Phone()
 	private static void getCat() {

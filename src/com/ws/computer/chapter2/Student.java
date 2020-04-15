@@ -6,9 +6,13 @@ package com.ws.computer.chapter2;
  * 时间：2020年4月12日下午10:36:20
  */
 public class Student {
+	//public private 
 	private String name;
 	private String number;
 	private int age;
+	/**
+	 * @return the name
+	 */
 	public String getName() {
 		return name;
 	}
@@ -43,9 +47,7 @@ public class Student {
 		this.age = age;
 	}
 	
-	public void info(){
-		System.out.println("姓名:"+name+"   年龄:"+age+"  学号:"+number);
-	}
 	
-
+	
+	
 }

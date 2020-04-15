@@ -11,6 +11,6 @@ public class ObjectPackage {
 		stu.setAge(21);
 		stu.setName("董乐强");
 		stu.setNumber("31110904");
-		stu.info();
+		//stu.info();
 	}
 }

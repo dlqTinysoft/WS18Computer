@@ -15,7 +15,7 @@ public class ParamAsPhone {
 		
 		String[] strs = {"abc"};
 		//new String[1]; strs[0] = "abc"
-		func(p1);
+		//func(p1);
 		System.out.println(p1.brand);
 		System.out.println(p1.price);
 		int a = 5 ;
@@ -36,8 +36,8 @@ public class ParamAsPhone {
 
 	//方法的形参为引用类型
 	//定义一个方法，方法形参 都是基本数据类 
-	//引用类型
-	public static void func(Phone phone) {
+	//引用类型 phone = 0x112233
+	public static void func(Phone phone, int param ) {
 		//赋值
 		phone.brand = "华为";
 		phone.price = 4999;
