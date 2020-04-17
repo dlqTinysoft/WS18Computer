@@ -13,9 +13,16 @@ import java.util.Arrays;
 public class Demo {
 	
 	public static void main(String[] args) {
-		int[] arr = {25,2,24,76,101,96,28};
-		AnswerToComputerThreeAndFour.bubbleSort(arr);
-		System.out.println(Arrays.toString(arr));
+		Person p = new Person();
+		p.age = 26;
+		p.name = "dlq";
+		p.height = 182;
+		System.out.println(p.age);
+		System.out.println(p.name);
+		System.out.println(p.height);
+		p.eat();
+		p.sport();
+		p.study();
 	}
 
 }

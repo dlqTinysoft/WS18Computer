@@ -91,7 +91,7 @@ public class HomeworkResultSeven {
 		boolean flag = true;
 		//1.冒泡的次数
 		for(int i = 1 ; i <=arr.length -1  ; i++){
-			//交换的次数
+			//比较的次数
 			for(int j = 0 ; j <arr.length - i ; j++){
 				if(arr[j]> arr[j+1]){
 					temp = arr[j+1];
