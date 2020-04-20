@@ -26,7 +26,7 @@ public class AnswerToComputerOneAndTwo {
 
 	public static void main(String[] args) {
 		
-		int[] arr = {25,24,12,76,101,96,28};
+		int[] arr = {25,10001,24,12,76,101,96,28,2,98,23};
 		
 		//1.每冒泡一次，都有一个元素确定了最终的位置。
 		bubbleSort(arr);
@@ -38,6 +38,11 @@ public class AnswerToComputerOneAndTwo {
 		System.out.println();
 		float minF = methodA(arr);
 		System.out.println(minF);
+		
+		String str = "dlq";
+		//str.length()
+		
+		
 
 	}
     /**
@@ -94,7 +99,7 @@ public class AnswerToComputerOneAndTwo {
 					flag = false;
 				}	
 			}
-			//没有发生一次交换，那么元素已经有序了，推出外层循环，不需要冒泡了
+			//没有发生一次交换，那么元素已经有序了，退出外层循环，不需要冒泡了
 			if(flag){
 				break;
 			}

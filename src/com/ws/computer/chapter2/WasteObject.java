@@ -18,6 +18,9 @@ public class WasteObject {
 		c.name = "小黑猫";
 		c.age = 2;
 		c = null;
+		while(true){
+			new Cat();
+		}
 		
 	}
 	// 垃圾对象：该方法释放后，没有引用指向new Phone()

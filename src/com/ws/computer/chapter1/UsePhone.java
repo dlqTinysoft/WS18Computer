@@ -28,7 +28,5 @@ public class UsePhone {
         p2.brand = "苹果11";
         p2.price = 7999;
         p2.info(); 
-        
-        
 	}
 }

@@ -24,21 +24,44 @@ public class VariableDifference {
 	//成员变量
 	public static String name;
 	private  static boolean age;
+	private static boolean flag;
+	private String name2 ;
+	
+	private static String name3 = "dlq";
+	
+	public static String height;
+	
+	public static char age2 ;
+	
 	public static void main(String[] args) {
+		
+		System.out.println(height);
+		
+		
+		System.out.println(name3);
+		
+		int age ;
+		int height;
+		
+		int age4 = 0  ;
+		System.out.println(age4);
+		
+		
+		
 		//1.局部变量在方法内部，成员变量在方法外部
 		//2.局部变量：只有方法当中才可以使用，出了方法就不能再用
 		//成员变量：整个类全都可以通用。
 		//3.局部变量：没有默认值，如果要想使用，必须手动进行赋值
 		//  成员变量：如果没有赋值，会有默认值，规则和数组一样
 		//System.out.println(name);
-		System.out.println(age);
-		int age = 0  ;
+		//System.out.println(age);
+		//int age = 0  ;
 		float price = 0.3f ;
 		
 		double price1 = 0 ;
 		System.out.println(price1);
 		System.out.println(price);
-		System.out.println(age);
+		//System.out.println(age);
 		Cat c = new Cat();
 		methodA(1.25);
 		System.out.println(c);
@@ -48,11 +71,16 @@ public class VariableDifference {
 	}
 	
 	public static void methodA(double param1){
+		System.out.println(name3);
+		int age;
+		//int name 
+		int a ;
+		int b;
 		System.out.println(name);
 		//局部变量
 		float price = 90.23f ;
-		int age = 26;
-		System.out.println(price);
-		System.out.println(age);
+		//int age = 26;
+		//System.out.println(price);
+		//System.out.println(age);
 	}
 }

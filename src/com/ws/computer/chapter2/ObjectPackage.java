@@ -8,9 +8,10 @@ public class ObjectPackage {
 	
 	public static void main(String[] args) {
 		Student stu = new Student();
-		stu.setAge(21);
-		stu.setName("董乐强");
-		stu.setNumber("31110904");
-		//stu.info();
+		
+		stu.setName("dlq");//stu.name = "dlq";
+		System.out.println(stu.getName());//stu.name
+	
+	
 	}
 }

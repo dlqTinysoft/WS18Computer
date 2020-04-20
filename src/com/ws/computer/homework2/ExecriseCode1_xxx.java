@@ -33,8 +33,100 @@ public class ExecriseCode1_xxx {
 	
 	
 	public static void main(String[] args) {
+		//System.out.println(isPlalindrome2(1221));
+		
+		//System.out.println(strReversal1("abcdefg",1));
+		
+		//System.out.println(result(11));
+		
+		System.out.println(isP1(1221));
+		
+		System.out.println(reve1("abcdefg",3));
+	}
+	
+	
+	public static String reve1(String  str , int n){
+		
+		String strTail = str.substring(n,str.length());
+		String strHead = str.substring(0,n);
+		return strTail + strHead;
 		
 	}
+	
+	public static String reve(String str , int n){
+		
+		String strHead = "";
+		
+		String strTail = "";
+		for(int i = n ; i < str.length() ; i++){
+			strHead += str.charAt(i);
+		}
+		for(int i = 0 ; i < n ; i++){
+			strTail += str.charAt(i);
+		}
+		return strHead + strTail;
+	}
+	
+	
+	
+	//"121"   121
+	public static boolean isP1(long number){
+		
+		//1.把number变成字符串
+		String str = String.valueOf(number);
+		//2.str反转过来
+		StringBuffer sbf = new StringBuffer();
+		sbf = sbf.append(str);
+		sbf = sbf.reverse();
+		String reverseStr = sbf.toString();
+		
+		//3.str 和 reverseStr进行比较
+		if(!str.equals(reverseStr))
+              return false;
+		
+		return true;
+		
+	}
+	
+	public static boolean isP(long number){
+		
+		if( number < 0 )
+			return false;
+		
+		//分母
+		int div = 1;
+		
+		//第一步:div的初始值
+		while( number / div >= 10)
+			div = div * 10;
+		
+		//第二步：判断回文数
+		
+		while(number > 0 ){
+			//1221
+			//1.number最高位，也是最左边的数字
+			long left =  number / div;
+			
+			//2.number的最低位，也是右边的数字
+			long right = number % 10 ;
+			
+			if(left != right)
+				return false;
+			
+			//3.去掉最高的位数，也就是左边， 去掉最低位 也就是右边的数
+			
+			//去掉最高位
+			number = number % div ;
+			
+			//去掉最低位
+			number = number / 10 ;
+			
+			//4.div要变
+			div = div / 100;	
+		}
+		return true;
+	}
+	
 	
 	/**
 	 * 判断number是否为回文数
@@ -45,11 +137,70 @@ public class ExecriseCode1_xxx {
 	 */
 	public static boolean isPlalindrome(long number){
 		boolean isFlag = true;
+		String str = String.valueOf(number);
+		StringBuffer sbf = new StringBuffer();
+		String strReverse = sbf.append(str).reverse().toString();
 		
-		
-		
+		if(!str.equals(strReverse))
+			isFlag = false;
+
 		return isFlag;
 	}
+	
+	public static boolean isPlalindrome1(long number){
+		boolean isFlag = true;
+		if(number < 0 )
+			return false;
+		
+		int div = 1 ;
+		while(number / div >= 10){
+			div = div * 10 ;
+		}
+		
+		while(number > 0 ){
+			//获取number的最高位数
+			long left = number / div;
+			//获取number的最低位数
+			long right = number % 10 ;
+			//如果左右 不相等，则不是回文数
+			if(left != right)
+			  return false;
+			
+			//将最高位数字去除
+			number = (number % div) ;
+			//将最低位去除
+			number = number / 10;
+			
+			//减少两位，分母/100
+			div = div / 100;
+		}
+		return isFlag;
+	}
+	
+	
+	public static Boolean isPlalindrome2(long number){
+		
+		boolean isFlag = true;
+		if( number < 0 || (number % 10 == 0 && number !=0))
+			return false;
+		
+		
+		long revertNumber = 0 ;
+		
+		while(number > revertNumber){
+			// number%10 获取最低位数字
+			revertNumber = revertNumber * 10 + number % 10 ;
+			number = number / 10 ;
+		}
+		
+		if(!(number == revertNumber || number == revertNumber / 10))
+			isFlag =  false;
+		return isFlag;
+	}
+	
+	
+	
+	
 	
 	/**
 	 * 字符串前面的n个字符转移到字符串的尾部。
@@ -61,10 +212,26 @@ public class ExecriseCode1_xxx {
 	 * @return "cdefgab"
 	 */
 	public static String strReversal(String str, int n ){
-		
-		
+		String strTail = str.substring(n,str.length()) ;
+		String strHead = str.substring(0,n);
+		str = strTail + strHead;
 		return str;
 	} 
+	
+	
+	public static String strReversal1(String str, int n){
+		StringBuffer sbf = new StringBuffer();
+		for(int i = n ; i < str.length() ; i++){
+			sbf.append(str.charAt(i));
+		}
+		
+		for(int i = 0 ; i < n ; i++){
+			sbf.append(str.charAt(i));
+		}
+		
+		return sbf.toString();
+		
+	}
 	
 	/**
 	 * 给你一个整数 n，请你帮忙计算并返回该整数「各位数字之积」与「各位数字之和」的差。
@@ -79,7 +246,14 @@ public class ExecriseCode1_xxx {
 	 */
 	public static long result(long number){
 		
-		
-		return number;
+		 long add = 0 ;
+		 long mul = 1 ;
+		 while(number > 0 ){
+			 long digit = number %  10 ;
+			 add += digit;
+			 mul *= digit;
+			 number = number / 10 ;
+		 }
+		return mul - add;
 	}
 }
