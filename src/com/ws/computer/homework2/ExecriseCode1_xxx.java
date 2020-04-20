@@ -1,5 +1,7 @@
 package com.ws.computer.homework2;
 
+import java.util.Scanner;
+
 /**
  * 作业题
  * 1.编写一个方法，判断一个整数是否为回文数。
@@ -33,15 +35,7 @@ public class ExecriseCode1_xxx {
 	
 	
 	public static void main(String[] args) {
-		//System.out.println(isPlalindrome2(1221));
-		
-		//System.out.println(strReversal1("abcdefg",1));
-		
-		//System.out.println(result(11));
-		
-		System.out.println(isP1(1221));
-		
-		System.out.println(reve1("abcdefg",3));
+	
 	}
 	
 	
@@ -151,12 +145,10 @@ public class ExecriseCode1_xxx {
 		boolean isFlag = true;
 		if(number < 0 )
 			return false;
-		
 		int div = 1 ;
 		while(number / div >= 10){
 			div = div * 10 ;
 		}
-		
 		while(number > 0 ){
 			//获取number的最高位数
 			long left = number / div;
