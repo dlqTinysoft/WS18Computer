@@ -8,33 +8,31 @@ package com.ws.computer.chapter2;
 public class Request {
 	
 	//应用商户平台
+	//public private
 	private String appId;
 	//停车厂编号
 	private String parkId;
-	/**
-	 * @return the appId
-	 */
+	
 	public String getAppId() {
 		return appId;
 	}
-	/**
-	 * @param appId the appId to set
-	 */
 	public void setAppId(String appId) {
 		this.appId = appId;
 	}
-	/**
-	 * @return the parkId
-	 */
 	public String getParkId() {
 		return parkId;
 	}
-	/**
-	 * @param parkId the parkId to set
-	 */
 	public void setParkId(String parkId) {
 		this.parkId = parkId;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }

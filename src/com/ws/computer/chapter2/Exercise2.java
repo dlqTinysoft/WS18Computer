@@ -11,7 +11,7 @@ public class Exercise2 {
 		//1.封装请求报文
 		Request req = new Request();
 		req.setAppId("00125");
-		req.setParkId("01546");
+		//req.setParkId("01546");
 		//2.发送报文,并同步接收响应
 		Response resp = send(req);
 		//3.解析报文

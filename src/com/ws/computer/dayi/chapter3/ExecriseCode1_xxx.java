@@ -1,5 +1,7 @@
 package com.ws.computer.dayi.chapter3;
 
+import java.util.Scanner;
+
 /**
  * 作者： 董乐强
  * 邮箱：dlq_tinysoft@163.com
@@ -12,6 +14,8 @@ public class ExecriseCode1_xxx {
 	public static void main(String[] args) {
 		//1221
 		//-121 121-
+		Scanner sc = new Scanner(System.in);
+		
 		
 		//System.out.println(isP1(-1221));
 		System.out.println(strReve("abcdefg",4));
@@ -48,6 +52,7 @@ public class ExecriseCode1_xxx {
 		
 		//n=2 ab
 		String str2 = str.substring(0,n);
+		
 		
 		 
 		return str1+str2;
