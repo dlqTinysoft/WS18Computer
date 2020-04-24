@@ -9,12 +9,6 @@ package com.ws.computer.chapter3;
 public class ThisTest {
 	
 	public static void main(String[] args) {
-		Person p1 = new Person();
-		System.out.println(p1);
-		p1.setName("dlq");
-		
-		Person p2 = new Person();
-		p2.setName("ddd");
 		
 		
 		

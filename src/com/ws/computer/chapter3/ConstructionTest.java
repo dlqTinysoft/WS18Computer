@@ -8,7 +8,9 @@ package com.ws.computer.chapter3;
 public class ConstructionTest {
 
 	public static void main(String[] args) {
-		new ConstructionMethod("dlq","dlq");
-		new ConstructionMethod();
+		ConstructionMethod cs = new ConstructionMethod("dlq","dlq");
+		
+		System.out.println(cs.getName());
+		System.out.println(cs.getInfo());
 	}
 }
