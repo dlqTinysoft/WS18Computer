@@ -16,8 +16,9 @@ public class StudentTest {
 		
 	   System.out.println(stu.toString());
 	   System.out.println(stu1.toString());
+	   //Object
 	   
-	   //
+	   // Object(超类)
 	   System.out.println("=====================");
 	   System.out.println(stu);//stu.toString()
 	   System.out.println(stu1);//stu1.toString();
