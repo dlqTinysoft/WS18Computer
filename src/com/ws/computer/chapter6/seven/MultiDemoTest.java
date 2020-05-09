@@ -35,6 +35,7 @@ public class MultiDemoTest {
         	 Cat cat1 = (Cat)animal;
         	 System.out.println(cat1.age);
          }
+         
 		
          if(animal instanceof Dog){
         	 Dog dog = (Dog)animal;
