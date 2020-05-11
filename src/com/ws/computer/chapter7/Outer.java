@@ -10,7 +10,7 @@ package com.ws.computer.chapter7;
 public class Outer {
 	
 	//定义外部类成员变量
-	int m = 0 ;
+	 int m = 0 ;
 	
 	//定义外部类方法
 	void show(){
