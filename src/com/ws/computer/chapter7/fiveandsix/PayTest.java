@@ -9,19 +9,19 @@ public class PayTest {
 	
 	public static void main(String[] args) {
 		
-		//支付操作
+		//向扣款机构发起扣款操作
 		payInterface(new UnionPay());
 		payInterface(new AliPay());
 		payInterface(new WechatPay());
 	}
 	
 	
-	//支付的方法
+	//扣款方法优化：使用多态实现多通道扣款模式。
 	private static void payInterface(Pay pay){
 		//发起支付
 		pay.pay();
 	}
-    //做支付的方法，
+    //传统的扣款模式
 	private static void pay(String id) {
 		
 		if("1".equals(id)){
@@ -35,7 +35,6 @@ public class PayTest {
 			System.out.println("向银联发起扣款...");
 		}
 		
-
 		if("4".equals(id)){
 			System.out.println("向网联发起扣款...");
 		}
