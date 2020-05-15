@@ -56,17 +56,5 @@ public class EqualsTest {
 		System.out.println(str3 == str4);
 		System.out.println(str4 == str5 );
 		System.out.println(str3 == str5 );
-		
-		
-		
-		
-		
-		
-		
 	}
-	
-	
-	
-	
-
 }
