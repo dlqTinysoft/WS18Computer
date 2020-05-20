@@ -1,12 +1,12 @@
-package com.ws.computer.chapter10.fixeandsix;
+package com.ws.computer.chapter10.threeandfour;
 
 import java.util.Random;
 
 /**
  * 作者： 董乐强
  * 邮箱：dlq_tinysoft@163.com
- * 时间：2020年5月20日上午9:37:19
- * 生成随机数
+ * 时间：2020年5月20日上午11:37:06
+ * 生成随机数的
  */
 public class RandomTest {
 	
@@ -16,9 +16,10 @@ public class RandomTest {
 		Random rd = new Random();
 		while(true){
 			
-			double d = rd.nextDouble();
-			System.out.println(d);
-			Thread.sleep(1000);//1000ms = 1s
+			System.out.println(rd.nextDouble());//0到1之间的随机数
+			
+			//程序暂停1000ms
+			Thread.sleep(1000);
 			
 			
 		}
