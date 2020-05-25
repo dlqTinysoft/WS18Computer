@@ -62,7 +62,7 @@ public class StringTest {
 		}
 		
 		//http协议：字符串协议 
-		"abc".
+		//"abc".
 		
 		
 	}

@@ -11,9 +11,12 @@
  5.1 String类
  5.2 Scanner类
  5.3 Math和Random类
- 5.4 日期类
+ 5.4 日期类：
+    https://github.com/JodaOrg/joda-time
  5.5 StringBuffer类
  5.6 包装类(重点)
+ 
+ 
  
  =======================下节课内容=====================================
  第六章：集合

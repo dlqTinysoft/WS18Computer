@@ -13,21 +13,22 @@ import java.util.Date;
  * 日期类
  */
 public class DateTest {
-	
-	
 	public static void main(String[] args) {
+		//new一个日期类
 		Date date = new Date();
-		System.out.println(date);
+		System.out.println(date.toString());
 		//日期类转换为字符串
-		DateFormat bf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String strDate = bf.format(date);
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String strDate = format.format(date);
 		System.out.println(strDate);
-		//字符串转日期
 		try {
-			Date date1 = bf.parse(strDate);
+			//日期转换为字符串
+			Date date1 = format.parse(strDate);
+			System.out.println(date1);
 		} catch (ParseException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
+	
 		
 		
 	
