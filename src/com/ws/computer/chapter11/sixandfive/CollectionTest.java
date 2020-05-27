@@ -54,8 +54,6 @@ public class CollectionTest {
 		 
 		 //4.ArrayList的原理 ： 内部是动态数组结构
 		 // 增加元素和删除元素 非常耗时的   时间复杂度0（n）。 查询元素：时间复杂度 0(1)
-		 
-		 
 		 //5.LinkedList集合：链表
 		 LinkedList<String> linkedList = new LinkedList<>();
 		 
