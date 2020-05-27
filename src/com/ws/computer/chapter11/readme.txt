@@ -35,7 +35,7 @@
         1.`java.util.ArrayList`集合数据存储的结构是数组结构。
         2.元素增删慢，查找快，由于日常开发中使用最多的功能为查询数据、遍历数据，
                     所以`ArrayList`是最常用的集合。
-     3)LinedList的常见API及原理
+     3)LinkedList的常见API及原理
          java.util.LinkedList`集合数据存储的结构是双向链表结构。方便元素添加、删除的集合。
         `java.util.LinkedList`集合数据存储的结构是链表结构。方便元素添加、删除的集合
          * `public void addFirst(E e)`:将指定元素插入此列表的开头。
