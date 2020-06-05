@@ -1,0 +1,55 @@
+* 练习题1：
+       集合和数组说法正确的是？
+       A 数组长度不可变，集合长度可变
+       B 数组长度可变， 集合长度可变
+       C 数组长度可变，集合程度不可变
+       D 数组可以存任意类型，集合不可以存储任意类型
+ 
+ 
+ *练习题2：
+    下列关于ArrayList集合说法正确的是？
+    A  ArrayList内部实现是链表结构
+    B  ArrayList内部实现是动态数组结构
+    C  ArrayList适合频繁增加元素和删除元素的业务需求
+    D  ArrayList适合频繁查询元素的业务需求
+    
+ 
+* 练习题3：
+  下列关于LinkedList集合说法正确的是？
+    A LinkedList内部实现是双向链表结构
+    B LinkedList内部实现是动态数组结构
+    C LinkedList适合频繁增加元素和删除元素的业务需求
+    D LinkedList适合频繁查询元素的业务需求
+ 
+* 练习题4：
+  下列关于LinkedList和ArrayList的说法正确的是？
+  A ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构
+	B 对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针
+	C 对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。 
+
+
+* 练习五
+  下列关于HashSet集合说法正确的是？
+    A HashSet集合是无序的
+    B HashSet集合中的元素可以重复
+    C HashSet内部采用的是Hash表结构
+    D HashSet集合不允许存入重复元素
+ 
+*练习六
+   下列关于TreeSet集合说法正确的是？
+   A TreeSet集合可以对元素进行排序。
+   B TreeSet集合不能添加null元素
+   C TreeSet集合允许放入空元素
+   D TreeSet内部是平衡二叉树（红黑树）实现的
+
+*练习七
+   下列说法正确的是
+   A TreeSet 是平衡二差树实现的,Treeset中的数据是自动排好序的，不允许放入null值。
+   B HashSet 是哈希表实现的,HashSet中的数据是无序的，可以放入null
+   C ArrayList内部是数组结构
+   D LinkedList内部双向链表结构
+  
+   
+
+  
+        

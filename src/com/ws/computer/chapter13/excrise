@@ -1,0 +1,21 @@
+
+*练习一
+   下列说法正确的是？
+   A TreeSet 是平衡二叉树实现的,Treeset中的数据是自动排好序的，不允许放入null值。
+   B HashSet 是哈希表实现的,HashSet中的数据是无序的
+   C ArrayList内部是动态数组结构
+   D LinkedList内部双向链表结构
+   
+*练习题二
+  下列关于HashMap说法正确的是？
+  A HashMap集合是一个双列集合，一个元素包含两个值（一个key,一个value）
+  B HashMap集合的元素，key和value的数据类型，必须保持一致。
+  C HashMap集合的元素，key和value的数据类型可以相同，也可以不相同
+  D HashMap集合中的元素，value是可以重复的
+  
+*练习题三
+ 下列关于TreeMap说法正确的是？
+  A TreeMap集合是Map接口的一个实现类
+  B TreeMap 内部是通过红黑树的原理来保证键的唯一性，这与TreeSet 集合存储的原理一样
+  C TreeMap可以对元素进行排序
+  D TreeMap内部采用的是哈希表结构
